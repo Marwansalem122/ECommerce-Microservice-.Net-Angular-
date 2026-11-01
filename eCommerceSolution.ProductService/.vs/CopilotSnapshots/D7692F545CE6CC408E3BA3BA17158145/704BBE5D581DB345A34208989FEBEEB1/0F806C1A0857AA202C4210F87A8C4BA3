@@ -1,0 +1,10 @@
+﻿
+using Microsoft.EntityFrameworkCore;
+
+namespace DataAccessLayer.DbContext
+{
+    public class ApplicationDbContext : Microsoft.EntityFrameworkCore.DbContext
+    {
+
+    }
+}

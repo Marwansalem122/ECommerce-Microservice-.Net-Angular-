@@ -1,0 +1,181 @@
+[
+  {
+    "ContainingType": "ProductMicroService.API.APIEndPoints.ProductAPIEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndPoints\u003Eb__0_3",
+    "RelativePath": "",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productAddRequest",
+        "Type": "eCommerce.BusinessLogicLayer.DTO.ProductAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductMicroService.API.APIEndPoints.ProductAPIEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndPoints\u003Eb__0_0",
+    "RelativePath": "api/products/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Products"
+    ],
+    "EndpointName": "GetProducts"
+  },
+  {
+    "ContainingType": "ProductMicroService.API.APIEndPoints.ProductAPIEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndPoints\u003Eb__0_2",
+    "RelativePath": "api/products/{productID:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "eCommerce.BusinessLogicLayer.DTO.ProductResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Products"
+    ],
+    "EndpointName": "GetProductById"
+  },
+  {
+    "ContainingType": "ProductMicroService.API.APIEndPoints.ProductAPIEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndPoints\u003Eb__0_4",
+    "RelativePath": "api/products/{productID:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "eCommerce.BusinessLogicLayer.DTO.ProductUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "eCommerce.BusinessLogicLayer.DTO.ProductResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Products"
+    ],
+    "EndpointName": "UpdateProduct"
+  },
+  {
+    "ContainingType": "ProductMicroService.API.APIEndPoints.ProductAPIEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndPoints\u003Eb__0_5",
+    "RelativePath": "api/products/{productID:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Products"
+    ],
+    "EndpointName": "DeleteProduct"
+  },
+  {
+    "ContainingType": "ProductMicroService.API.APIEndPoints.ProductAPIEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndPoints\u003Eb__0_1",
+    "RelativePath": "api/products/search",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "minPrice",
+        "Type": "System.Nullable\u00601[[System.Double, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Products"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\bin\Debug\net10.0\BusinessLogicLayer.deps.json
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\bin\Debug\net10.0\BusinessLogicLayer.dll
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\bin\Debug\net10.0\BusinessLogicLayer.pdb
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\bin\Debug\net10.0\DataAccessLayer.dll
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\bin\Debug\net10.0\DataAccessLayer.pdb
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\Business.450209FB.Up2Date
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.dll
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\refint\BusinessLogicLayer.dll
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\BusinessLogicLayer.pdb
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\BusinessLogicLayer\obj\Debug\net10.0\ref\BusinessLogicLayer.dll
