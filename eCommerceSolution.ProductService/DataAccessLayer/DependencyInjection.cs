@@ -13,12 +13,33 @@ namespace eCommerce.ProductService.DataAccessLayer
     {
         public static IServiceCollection AddDataAccessLayer(this IServiceCollection services,IConfiguration config) {
 
-            services.AddDbContext<ApplicationDbContext>(options => {
-                options
-                .UseMySQL(config.GetConnectionString("DefaultConnection")!);
-            }); //DefaultConnection
+          var connectionStringTemplate =
+        config.GetConnectionString("DefaultConnection");
 
-            services.AddScoped<IProductsRepository, ProductsRepository>();
+    if (string.IsNullOrWhiteSpace(connectionStringTemplate))
+        throw new InvalidOperationException(
+            "DefaultConnection is missing.");
+
+    var mysqlHost = config["MYSQL_HOST"];
+    var mysqlPassword = config["MYSQL_PASSWORD"];
+
+    if (string.IsNullOrWhiteSpace(mysqlHost))
+        throw new InvalidOperationException("MYSQL_HOST is missing.");
+
+    if (string.IsNullOrWhiteSpace(mysqlPassword))
+        throw new InvalidOperationException("MYSQL_PASSWORD is missing.");
+
+    var connectionString = connectionStringTemplate
+        .Replace("$MYSQL_HOST", mysqlHost)
+        .Replace("$MYSQL_PASSWORD", mysqlPassword);
+    Console.WriteLine(
+    $"MySQL Connection String: {connectionString}");
+    services.AddDbContext<ApplicationDbContext>(options =>
+    {
+        options.UseMySQL(connectionString);
+    });
+
+    services.AddScoped<IProductsRepository, ProductsRepository>();
 
             return services;
         }
