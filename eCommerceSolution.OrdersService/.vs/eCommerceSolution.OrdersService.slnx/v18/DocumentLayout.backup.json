@@ -1,0 +1,333 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\ordermicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|solutionrelative:ordermicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\ordermicroservice.api\\apicontrollers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|solutionrelative:ordermicroservice.api\\apicontrollers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\ordermicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|solutionrelative:ordermicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\ordermicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D2382C58-CCF4-54D3-0124-B8812BD38659}|OrderMicroservice.API\\OrderMicroservice.API.csproj|solutionrelative:ordermicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\validators\\orderupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\validators\\orderitemupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderitemupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\validators\\orderitemaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderitemaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\mappers\\orderaddrequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderaddrequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\mappers\\orderupdaterequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderupdaterequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\mappers\\orderitemaddrequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemaddrequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\mappers\\orderitemupdaterequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemupdaterequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\mappers\\ordertoorderresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\ordertoorderresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\mappers\\orderitemtoorderitemresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C912A4C9-4DC0-55B5-1B9D-FD132972197A}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemtoorderitemresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderAddRequestToOrderMappingProfile.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:19:17.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\Program.cs",
+              "RelativeDocumentMoniker": "OrderMicroservice.API\\Program.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\Program.cs",
+              "RelativeToolTip": "OrderMicroservice.API\\Program.cs",
+              "ViewState": "AgIAACIAAACAmZmZmZkVwCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:14:54.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderItemToOrderItemResponseMappingProfile.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:19:18.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderToOrderResponseMappingProfile.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:19:17.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:19:17.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:19:17.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderUpdateRequestToOrderMappingProfile.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderUpdateRequestToOrderMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderUpdateRequestToOrderMappingProfile.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Mappers\\OrderUpdateRequestToOrderMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderUpdateRequestToOrderMappingProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:19:17.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataAccessLayer",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-09T18:16:32.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\appsettings.json",
+              "RelativeDocumentMoniker": "OrderMicroservice.API\\appsettings.json",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\appsettings.json",
+              "RelativeToolTip": "OrderMicroservice.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-09T18:06:06.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\ApiControllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OrderMicroservice.API\\ApiControllers\\OrdersController.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\ApiControllers\\OrdersController.cs",
+              "RelativeToolTip": "OrderMicroservice.API\\ApiControllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T20:04:16.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\DependencyInjection.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DependencyInjection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAlwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T19:56:56.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "OrderMicroservice.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\OrderMicroservice.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "OrderMicroservice.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-09T18:07:53.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\DataAccessLayer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DependencyInjection.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\DataAccessLayer\\DependencyInjection.cs",
+              "RelativeToolTip": "DataAccessLayer\\DependencyInjection.cs",
+              "ViewState": "AgIAAA0AAADAmZmZmZkjwBcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T20:01:45.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrdersService.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Services\\OrdersService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\OrdersService.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Services\\OrdersService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\OrdersService.cs",
+              "ViewState": "AgIAAFcAAAAAmZmZmZkVwAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T19:51:28.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderItemUpdateRequestValidator.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderItemUpdateRequestValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderItemUpdateRequestValidator.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderItemUpdateRequestValidator.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Validators\\OrderItemUpdateRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T19:31:49.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItemAddRequestValidator.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderItemAddRequestValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderItemAddRequestValidator.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderItemAddRequestValidator.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Validators\\OrderItemAddRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T19:30:58.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderAddRequestValidator.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T19:30:00.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderUpdateRequestValidator.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderUpdateRequestValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderUpdateRequestValidator.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Validators\\OrderUpdateRequestValidator.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Validators\\OrderUpdateRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T19:32:26.604Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

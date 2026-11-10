@@ -1,0 +1,179 @@
+[
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "Get",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderResponse, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "Post",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderAddRequest",
+        "Type": "eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "Put",
+    "RelativePath": "api/Orders/{orderID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderUpdateRequest",
+        "Type": "eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "Delete",
+    "RelativePath": "api/Orders/{orderID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrderByOrderID",
+    "RelativePath": "api/Orders/search/orderid/{orderID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByProductID",
+    "RelativePath": "api/Orders/search/productid/{productID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderResponse, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByUserID",
+    "RelativePath": "api/Orders/search/userid/{userID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderResponse, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrderMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByOrderDate",
+    "RelativePath": "search/orderDate/{orderDate}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDate",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO.OrderResponse, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

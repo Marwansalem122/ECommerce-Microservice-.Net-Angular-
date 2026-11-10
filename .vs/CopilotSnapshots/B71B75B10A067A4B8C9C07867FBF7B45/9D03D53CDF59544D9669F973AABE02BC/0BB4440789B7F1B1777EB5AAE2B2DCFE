@@ -1,0 +1,17 @@
+﻿
+using eCommerce.OrdersMicroservice.BusinessLogicLayer.ServiceContracts;
+using eCommerce.OrdersMicroservice.BusinessLogicLayer.Services;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace eCommerce.OrdersMicroservice.BusinessLogicLayer
+{
+    public static class DependencyInjection
+    {
+        public static IServiceCollection AddBusinessLogicLayer(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddScoped<IOrdersService, OrdersService>();
+            return services;
+        }
+    }
+}
