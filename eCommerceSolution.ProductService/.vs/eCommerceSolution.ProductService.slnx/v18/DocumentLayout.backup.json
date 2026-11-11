@@ -3,31 +3,35 @@
   "WorkspaceRootPath": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.NET Core Projects\\Microservices\\eCommerceSolution.UsersService\\eCommerce.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\productapiendpoints\\productapiendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|solutionrelative:productmicroservice.api\\productapiendpoints\\productapiendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9FCCEB3-DD88-F8C0-89A3-FD31A7C54F23}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.NET Core Projects\\Microservices\\eCommerceSolution.UsersService\\eCommerce.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C147B3FD-421B-3085-777B-C68E3DAF6C74}|ProductMicroService.API\\ProductMicroService.API.csproj|d:\\.net core projects\\microservices\\ecommercesolution.productservice\\productmicroservice.api\\productmicroservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -76,8 +80,51 @@
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProductMicroService.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProductMicroService.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-11T18:05:09.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductMicroService.API\\appsettings.json",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\appsettings.json",
+              "RelativeToolTip": "ProductMicroService.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-04T10:20:15.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DependencyInjection.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\DependencyInjection.cs",
+              "RelativeToolTip": "DataAccessLayer\\DependencyInjection.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T15:01:35.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\Dockerfile",
               "RelativeDocumentMoniker": "ProductMicroService.API\\Dockerfile",
@@ -90,62 +137,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ProductMicroService.API\\appsettings.json",
-              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\appsettings.json",
-              "RelativeToolTip": "ProductMicroService.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-04T10:20:15.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\Program.cs",
               "RelativeDocumentMoniker": "ProductMicroService.API\\Program.cs",
               "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\Program.cs",
               "RelativeToolTip": "ProductMicroService.API\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAkwDYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T22:33:15.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DependencyInjection.cs",
-              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\DependencyInjection.cs",
-              "RelativeToolTip": "DataAccessLayer\\DependencyInjection.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T15:01:35.753Z",
+              "WhenOpened": "2026-10-30T22:33:15.06Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T15:01:06.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T15:01:06.319Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ProductAPIEndPoints.cs",
+              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
+              "RelativeDocumentMoniker": "ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
+              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
+              "RelativeToolTip": "ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T22:29:04.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.UsersService\\eCommerce.API\\Program.cs",
               "RelativeDocumentMoniker": "..\\eCommerceSolution.UsersService\\eCommerce.API\\Program.cs",
@@ -157,19 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductAPIEndPoints.cs",
-              "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
-              "RelativeDocumentMoniker": "ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
-              "ToolTip": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
-              "RelativeToolTip": "ProductMicroService.API\\ProductAPIEndPoints\\ProductAPIEndPoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T22:29:04.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProductMicroService.API.csproj",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\ProductMicroService.API\\ProductMicroService.API.csproj",
               "RelativeDocumentMoniker": "ProductMicroService.API\\ProductMicroService.API.csproj",
@@ -181,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DataAccessLayer.csproj",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
@@ -193,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IProductsRepository.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\RepositoryContracts\\IProductsRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\RepositoryContracts\\IProductsRepository.cs",
@@ -205,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ProductsRepository.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\Repositories\\ProductsRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProductsRepository.cs",
@@ -217,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ProductsService.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\BusinessLogicLayer\\Services\\ProductsService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\ProductsService.cs",
@@ -229,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\BusinessLogicLayer\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
@@ -241,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ProductResponseRequestValidator.cs",
               "DocumentMoniker": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\BusinessLogicLayer\\Validators\\ProductResponseRequestValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\ProductResponseRequestValidator.cs",

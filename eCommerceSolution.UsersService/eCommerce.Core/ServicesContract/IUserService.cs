@@ -7,6 +7,7 @@ namespace eCommerce.Core.ServicesContract
         Task<AuthenticationResponse?> Register(RegisterRequest request);
         Task<AuthenticationResponse?> Login(LoginRequest request);
         Task<AuthenticationResponse?> RefreshTokenAsync(string refreshToken);
+        Task<UserDTO?> GetUserDetailsAsync(Guid userId);
         Task LogoutAsync(string refreshToken);
     }
 }

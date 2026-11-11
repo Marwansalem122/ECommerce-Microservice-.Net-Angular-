@@ -55,7 +55,7 @@ namespace ProductMicroService.API
             app.UseAuthorization();
             app.MapControllers();
 
-            app.MapProductAPIEndPoints();
+            app.MapProductAPIEndpoints();
             app.Run();
         }
     }

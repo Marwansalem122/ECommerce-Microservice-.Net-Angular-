@@ -39,7 +39,7 @@ namespace eCommerce.OrdersMicroservice.DataAccessLayer
             services.AddSingleton<IMongoDatabase>(provider =>
             {
                 var mongoClient = provider.GetRequiredService<IMongoClient>();
-                return mongoClient.GetDatabase("OrdersDatabase");
+                return mongoClient.GetDatabase(Environment.GetEnvironmentVariable("MONGODB_DATABASE"));
             });
 
             services.AddScoped<IOrdersRepository, OrdersRepository>();

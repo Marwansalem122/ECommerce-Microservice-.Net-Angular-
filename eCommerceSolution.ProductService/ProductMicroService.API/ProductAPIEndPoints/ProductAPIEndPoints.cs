@@ -3,136 +3,104 @@ using eCommerce.BusinessLogicLayer.DTO;
 using eCommerce.BusinessLogicLayer.ServiceContract;
 using FluentValidation;
 using FluentValidation.Results;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ProductMicroService.API.APIEndPoints
 {
-    public static class ProductAPIEndPoints
+    public static class ProductAPIEndpoints
     {
-        public static IEndpointRouteBuilder MapProductAPIEndPoints(
-            this IEndpointRouteBuilder app)
+        public static IEndpointRouteBuilder MapProductAPIEndpoints(this IEndpointRouteBuilder app)
         {
-            var products = app.MapGroup("/api/products")
-                .WithTags("Products");
-
-            // GET /api/products
-            products.MapGet("/", async (
-                IProductService productService) =>
+            //GET /api/products
+            app.MapGet("/api/products", async (IProductService productsService) =>
             {
-                var result = await productService.GetProducts();
-
-                return Results.Ok(result);
-            })
-            .WithName("GetProducts")
-            .Produces(StatusCodes.Status200OK);
-
-            // GET /api/products/search?category=Electronics
-            products.MapGet("/search",
-                async (
-                    string? category,
-                    double? minPrice,
-                    IProductService productService) =>
-                {
-                    var products = await productService.GetProductsByCondition(
-                        p => (string.IsNullOrEmpty(category)
-                                || p.Category == category)
-                            && (!minPrice.HasValue
-                                || p.UnitPrice >= minPrice.Value));
-
-                    return Results.Ok(products);
-                });
-            // GET /api/products/{productID}
-            products.MapGet("/{productID:guid}",
-                async (
-                    Guid productID,
-                    IProductService productService) =>
-                {
-                    var product = await productService.GetProductByCondition(
-                        p => p.ProductID == productID);
-
-                    if (product is null)
-                        return Results.NotFound();
-
-                    return Results.Ok(product);
-                })
-            .WithName("GetProductById")
-            .Produces<ProductResponse>(StatusCodes.Status200OK)
-            .Produces(StatusCodes.Status404NotFound);
-
-            // POST /api/products
-            app.MapPost("/", async (
-                ProductAddRequest productAddRequest,
-                IProductService productService,
-                IValidator<ProductAddRequest> productAddRequestValidator) =>
-            {
-                ValidationResult validationResult =
-                    await productAddRequestValidator
-                        .ValidateAsync(productAddRequest);
-
-                if (!validationResult.IsValid)
-                {
-                    var errors = validationResult.Errors
-                        .Select(e => new
-                        {
-                            e.PropertyName,
-                            e.ErrorMessage
-                        });
-
-                    return Results.BadRequest(errors);
-                }
-
-                var product =
-                    await productService.AddProduct(productAddRequest);
-
-                if (product == null)
-                    return Results.Problem("Failed in Add Product");
-                return Results.Created(
-                    $"/api/products/{product!.ProductID}",
-                    product);
+                List<ProductResponse?> products = await productsService.GetProducts();
+                return Results.Ok(products);
             });
 
-            // PUT /api/products/{productID}
-            products.MapPut("/{productID:guid}",
-                async (
-                    Guid productID,
-                    [FromBody] ProductUpdateRequest request,
-                    IProductService productService) =>
+
+            //GET /api/products/search/product-id/00000000-0000-0000-0000-000000000000
+            app.MapGet("/api/products/search/product-id/{ProductID:guid}", async (IProductService productsService, Guid ProductID) =>
+            {
+                ProductResponse? product = await productsService.GetProductByCondition(temp => temp.ProductID == ProductID);
+                if (product == null)
+                    return Results.NotFound();
+
+                return Results.Ok(product);
+            });
+
+
+            //GET /api/products/search/xxxxxxxxxxxxxxxxxx
+            app.MapGet("/api/products/search/{SearchString}", async (IProductService productsService, string SearchString) =>
+            {
+                List<ProductResponse?> productsByProductName = await productsService.GetProductsByCondition(temp => temp.ProductName != null && temp.ProductName.Contains(SearchString, StringComparison.OrdinalIgnoreCase));
+
+                List<ProductResponse?> productsByCategory = await productsService.GetProductsByCondition(temp => temp.Category != null && temp.Category.Contains(SearchString, StringComparison.OrdinalIgnoreCase));
+
+                var products = productsByProductName.Union(productsByCategory);
+
+                return Results.Ok(products);
+            });
+
+
+            //POST /api/products
+            app.MapPost("/api/products", async (IProductService productsService, IValidator<ProductAddRequest> productAddRequestValidator, ProductAddRequest productAddRequest) =>
+            {
+                //Validate the ProductAddRequest object using Fluent Validation
+                ValidationResult validationResult = await productAddRequestValidator.ValidateAsync(productAddRequest);
+
+                //Check the validation result
+                if (!validationResult.IsValid)
                 {
-                    if (productID != request.ProductID)
-                    {
-                        return Results.BadRequest(
-                            "Route ProductID does not match request ProductID.");
-                    }
+                    Dictionary<string, string[]> errors = validationResult.Errors
+                      .GroupBy(temp => temp.PropertyName)
+                      .ToDictionary(grp => grp.Key,
+                        grp => grp.Select(err => err.ErrorMessage).ToArray());
+                    return Results.ValidationProblem(errors);
+                }
 
-                    var product = await productService.UpdateProduct(request);
 
-                    if (product is null)
-                        return Results.NotFound();
+                var addedProductResponse = await productsService.AddProduct(productAddRequest);
+                if (addedProductResponse != null)
+                    return Results.Created($"/api/products/search/product-id/{addedProductResponse.ProductID}", addedProductResponse);
+                else
+                    return Results.Problem("Error in adding product");
+            });
 
-                    return Results.Ok(product);
-                })
-            .WithName("UpdateProduct")
-            .Produces<ProductResponse>(StatusCodes.Status200OK)
-            .Produces(StatusCodes.Status400BadRequest)
-            .Produces(StatusCodes.Status404NotFound);
 
-            // DELETE /api/products/{productID}
-            products.MapDelete("/{productID:guid}",
-                async (
-                    Guid productID,
-                    IProductService productService) =>
+            //PUT /api/products
+            app.MapPut("/api/products", async (IProductService productsService, IValidator<ProductUpdateRequest> productUpdateRequestValidator, ProductUpdateRequest productUpdateRequest) =>
+            {
+                //Validate the ProductUpdateRequest object using Fluent Validation
+                ValidationResult validationResult = await productUpdateRequestValidator.ValidateAsync(productUpdateRequest);
+
+                //Check the validation result
+                if (!validationResult.IsValid)
                 {
-                    bool deleted = await productService.DeleteProduct(productID);
+                    Dictionary<string, string[]> errors = validationResult.Errors
+                      .GroupBy(temp => temp.PropertyName)
+                      .ToDictionary(grp => grp.Key,
+                        grp => grp.Select(err => err.ErrorMessage).ToArray());
+                    return Results.ValidationProblem(errors);
+                }
 
-                    if (!deleted)
-                        return Results.NotFound();
 
-                    return Results.NoContent();
-                })
-            .WithName("DeleteProduct")
-            .Produces(StatusCodes.Status204NoContent)
-            .Produces(StatusCodes.Status404NotFound);
+                var updatedProductResponse = await productsService.UpdateProduct(productUpdateRequest);
+                if (updatedProductResponse != null)
+                    return Results.Ok(updatedProductResponse);
+                else
+                    return Results.Problem("Error in updating product");
+            });
 
+
+            //DELETE /api/products/xxxxxxxxxxxxxxxxxxx
+            app.MapDelete("/api/products/{ProductID:guid}", async (IProductService productsService, Guid ProductID) =>
+            {
+                bool isDeleted = await productsService.DeleteProduct(ProductID);
+                if (isDeleted)
+                    return Results.Ok(true);
+                else
+                    return Results.Problem("Error in deleting product");
+            });
             return app;
         }
     }

@@ -142,6 +142,13 @@ namespace eCommerce.Core.Services
                 RefreshToken = newRawToken
             };
         }
+        public async Task<UserDTO?> GetUserDetailsAsync(Guid userId)
+        {
+            var user = await _userRepository.GetUserByIdAsync(userId);
+            if (user is null)
+                return null;
+            return _mapper.Map<UserDTO>(user);
+        }
         public async Task LogoutAsync(string rawRefreshToken)
         {
             var tokenHash = Convert.ToHexString(

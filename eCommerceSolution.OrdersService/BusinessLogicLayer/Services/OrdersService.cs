@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO;
+using eCommerce.OrdersMicroservice.BusinessLogicLayer.HttpClients;
 using eCommerce.OrdersMicroservice.BusinessLogicLayer.ServiceContracts;
 using eCommerce.OrdersMicroservice.DataAccessLayer.Entities;
 using eCommerce.OrdersMicroservice.DataAccessLayer.RepositoryContracts;
@@ -17,10 +18,19 @@ namespace eCommerce.OrdersMicroservice.BusinessLogicLayer.Services
         private readonly IValidator<OrderItemAddRequest> _orderItemAddRequestValidator;
         private readonly IValidator<OrderUpdateRequest> _orderUpdateRequestValidator;
         private readonly IValidator<OrderItemUpdateRequest> _orderItemUpdateRequestValidator;
+        private readonly UsersMicroserviceClient _usersMicroserviceClient;
         private readonly IMapper _mapper;
         private IOrdersRepository _ordersRepository;
 
-        public OrdersService(IOrdersRepository ordersRepository, IMapper mapper, IValidator<OrderAddRequest> orderAddRequestValidator, IValidator<OrderItemAddRequest> orderItemAddRequestValidator, IValidator<OrderUpdateRequest> orderUpdateRequestValidator, IValidator<OrderItemUpdateRequest> orderItemUpdateRequestValidator)
+        public OrdersService(
+            IOrdersRepository ordersRepository,
+            IMapper mapper,
+            IValidator<OrderAddRequest> orderAddRequestValidator,
+            IValidator<OrderItemAddRequest> orderItemAddRequestValidator,
+            IValidator<OrderUpdateRequest> orderUpdateRequestValidator,
+            IValidator<OrderItemUpdateRequest> orderItemUpdateRequestValidator,
+            UsersMicroserviceClient usersMicroserviceClient
+            )
         {
             _orderAddRequestValidator = orderAddRequestValidator;
             _orderItemAddRequestValidator = orderItemAddRequestValidator;
@@ -28,6 +38,7 @@ namespace eCommerce.OrdersMicroservice.BusinessLogicLayer.Services
             _orderItemUpdateRequestValidator = orderItemUpdateRequestValidator;
             _mapper = mapper;
             _ordersRepository = ordersRepository;
+            _usersMicroserviceClient = usersMicroserviceClient;
         }
 
 
@@ -61,7 +72,11 @@ namespace eCommerce.OrdersMicroservice.BusinessLogicLayer.Services
             }
 
             //TO DO: Add logic for checking if UserID exists in Users microservice
-
+            UserDTO? user = await _usersMicroserviceClient.GetUserByUserID(orderAddRequest.UserID);
+            if (user == null)
+            {
+                throw new ArgumentException("Invalid User ID");
+            }
 
             //Convert data from OrderAddRequest to Order
             Order orderInput = _mapper.Map<Order>(orderAddRequest); //Map OrderAddRequest to 'Order' type (it invokes OrderAddRequestToOrderMappingProfile class)
@@ -119,7 +134,11 @@ namespace eCommerce.OrdersMicroservice.BusinessLogicLayer.Services
             }
 
             //TO DO: Add logic for checking if UserID exists in Users microservice
-
+            UserDTO? user = await _usersMicroserviceClient.GetUserByUserID(orderUpdateRequest.UserID);
+            if (user == null)
+            {
+                throw new ArgumentException("Invalid User ID");
+            }
 
             //Convert data from OrderUpdateRequest to Order
             Order orderInput = _mapper.Map<Order>(orderUpdateRequest); //Map OrderUpdateRequest to 'Order' type (it invokes OrderUpdateRequestToOrderMappingProfile class)

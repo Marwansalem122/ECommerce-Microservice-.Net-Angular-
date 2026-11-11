@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1isjPU5z3zY=",
+  "dgSpecHash": "wofuj8bXPO0=",
   "success": true,
   "projectFilePath": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.ProductService\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,10 @@
     "C:\\Users\\HP\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.8\\system.security.cryptography.protecteddata.10.0.8.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\system.security.permissions\\10.0.8\\system.security.permissions.10.0.8.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\system.windows.extensions\\10.0.8\\system.windows.extensions.10.0.8.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\zstdsharp.port\\0.8.8\\zstdsharp.port.0.8.8.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\zstdsharp.port\\0.8.8\\zstdsharp.port.0.8.8.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\10.0.15\\microsoft.windowsdesktop.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.15\\microsoft.netcore.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\10.0.15\\microsoft.aspnetcore.app.ref.10.0.15.nupkg.sha512"
   ],
   "logs": []
 }

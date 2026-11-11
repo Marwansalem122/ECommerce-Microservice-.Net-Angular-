@@ -80,3 +80,9 @@ D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicr
 D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\ProductMicroService.API.MvcApplicationPartsAssemblyInfo.cs
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.lib.module.js
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.js
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.Config.js
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\HotReload\browser-tools-key.public.json
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\HotReload\browser-tools-key.private.json
+D:\.NET Core Projects\Microservices\eCommerceSolution.ProductService\ProductMicroService.API\obj\Debug\net10.0\ProductMicroService.API.sourcelink.json

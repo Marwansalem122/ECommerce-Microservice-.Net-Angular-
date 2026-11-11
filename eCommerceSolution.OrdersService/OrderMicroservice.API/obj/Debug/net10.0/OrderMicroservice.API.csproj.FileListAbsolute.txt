@@ -33,11 +33,6 @@ D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicrose
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\bin\Debug\net10.0\BusinessLogicLayer.pdb
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\bin\Debug\net10.0\DataAccessLayer.pdb
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\OrderMicroservice.API.csproj.AssemblyReference.cache
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\dotnet-watch\Microsoft.NET.Sdk.BlazorWeb.DotNetWatch.lib.module.js
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\dotnet-watch\Microsoft.NET.Sdk.BlazorWeb.DotNetWatch.BrowserTools.js
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\dotnet-watch\Microsoft.NET.Sdk.BlazorWeb.DotNetWatch.BrowserTools.Config.js
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\dotnet-watch\browser-tools-key.public.json
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\dotnet-watch\browser-tools-key.private.json
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\rpswa.dswa.cache.json
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\OrderMicroservice.API.GeneratedMSBuildEditorConfig.editorconfig
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\OrderMicroservice.API.AssemblyInfoInputs.cache
@@ -52,10 +47,6 @@ D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicrose
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\jsmodules\jsmodules.build.manifest.json
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\scopedcss\scopedcss.cache
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\scopedcss\bundle\OrderMicroservice.API.styles.css
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\ltm1xhjqbe-{0}-hbxp78vwan-hbxp78vwan.gz
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\4p7b8vrsl4-{0}-ddsbds2zsf-ddsbds2zsf.gz
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\c1p01l0rhm-{0}-pmpabpnd9a-pmpabpnd9a.gz
-D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\29kfdtlelq-{0}-o299wl1apk-o299wl1apk.gz
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\staticwebassets.build.json
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\staticwebassets.development.json
@@ -68,3 +59,12 @@ D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicrose
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\OrderMicroservice.API.genruntimeconfig.cache
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\ref\OrderMicroservice.API.dll
 D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.lib.module.js
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.js
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.Config.js
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\HotReload\browser-tools-key.public.json
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\HotReload\browser-tools-key.private.json
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\i8khmzt3ot-{0}-tchfgznwy8-tchfgznwy8.gz
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\iws3ryv0vv-{0}-oky9bsko2f-oky9bsko2f.gz
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\hx7dt6ztg0-{0}-v1vy2to33n-v1vy2to33n.gz
+D:\.NET Core Projects\Microservices\eCommerceSolution.OrdersService\OrderMicroservice.API\obj\Debug\net10.0\compressed\29kfdtlelq-{0}-ysew0n4kjn-ysew0n4kjn.gz

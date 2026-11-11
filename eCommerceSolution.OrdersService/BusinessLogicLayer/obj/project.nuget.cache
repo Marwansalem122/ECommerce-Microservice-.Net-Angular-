@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "39acP8VhRvw=",
+  "dgSpecHash": "dVRdKCx0exc=",
   "success": true,
   "projectFilePath": "D:\\.NET Core Projects\\Microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,10 @@
     "C:\\Users\\HP\\.nuget\\packages\\mongodb.driver\\3.13.0\\mongodb.driver.3.13.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\sharpcompress\\0.48.1\\sharpcompress.0.48.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\snappier\\1.3.1\\snappier.1.3.1.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\10.0.15\\microsoft.windowsdesktop.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.15\\microsoft.netcore.app.ref.10.0.15.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\10.0.15\\microsoft.aspnetcore.app.ref.10.0.15.nupkg.sha512"
   ],
   "logs": []
 }

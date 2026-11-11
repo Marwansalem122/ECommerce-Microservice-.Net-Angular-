@@ -31,8 +31,11 @@ namespace eCommerce.ProductService.DataAccessLayer
 
     var connectionString = connectionStringTemplate
         .Replace("$MYSQL_HOST", mysqlHost)
-        .Replace("$MYSQL_PASSWORD", mysqlPassword);
-    Console.WriteLine(
+        .Replace("$MYSQL_PASSWORD", mysqlPassword)
+        .Replace("$MYSQL_DATABASE", Environment.GetEnvironmentVariable("MYSQL_DATABASE"))
+      .Replace("$MYSQL_PORT", Environment.GetEnvironmentVariable("MYSQL_PORT"))
+      .Replace("$MYSQL_USER", Environment.GetEnvironmentVariable("MYSQL_USER"));
+            Console.WriteLine(
     $"MySQL Connection String: {connectionString}");
     services.AddDbContext<ApplicationDbContext>(options =>
     {

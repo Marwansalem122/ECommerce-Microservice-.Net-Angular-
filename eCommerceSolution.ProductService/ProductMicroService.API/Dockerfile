@@ -29,4 +29,6 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENV MYSQL_HOST=localhost	
 ENV MYSQL_PASSWORD=Temp123456
+ENV MYSQL_DATABASE=ecommerceproductsdatabase
+ENV MYSQL_USER=product_api
 ENTRYPOINT ["dotnet", "ProductMicroService.API.dll"]

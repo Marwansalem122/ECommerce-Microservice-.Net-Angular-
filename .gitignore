@@ -1,0 +1,107 @@
+# ============================================================
+# .gitignore — eCommerce Microservices Platform
+# ============================================================
+
+# -------------------------------------------------------
+# 🗄️ Local Database Data (never commit DB data files)
+# -------------------------------------------------------
+ordersdb/
+pgdata/
+mysqldata/
+mongodata/
+redisdata/
+
+# -------------------------------------------------------
+# 🔑 Secrets & Environment Files
+# -------------------------------------------------------
+.env
+.env.*
+appsettings.Production.json
+**/appsettings.*.json
+!**/appsettings.json
+!**/appsettings.Development.json
+*.pfx
+*.p12
+*.key
+*.pem
+*.cer
+
+# -------------------------------------------------------
+# 🏗️ .NET Build Outputs
+# -------------------------------------------------------
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# -------------------------------------------------------
+# 📦 NuGet
+# -------------------------------------------------------
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/repositories.config
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# -------------------------------------------------------
+# 🖥️ Visual Studio / VS Code / Rider
+# -------------------------------------------------------
+.vs/
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.rsuser
+*.suo
+*.ncrunch*
+*.DotSettings.user
+_ReSharper*/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+
+# -------------------------------------------------------
+# 🌐 Node.js / Angular (front-end)
+# -------------------------------------------------------
+**/node_modules/
+**/.angular/cache/
+**/dist/
+**/.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -------------------------------------------------------
+# 🐳 Docker
+# -------------------------------------------------------
+# Docker volumes and local override files
+docker-compose.override.yml
+.dockerignore.local
+
+# -------------------------------------------------------
+# 🗂️ Session & Temp State
+# -------------------------------------------------------
+session-state/
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+
+# -------------------------------------------------------
+# 💻 OS-generated Files
+# -------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
