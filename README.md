@@ -9,6 +9,7 @@ A **comprehensive eCommerce application** built with **ASP.NET Core 10** using a
 > **Learning Roadmap & Goals**
 
 - ✅ Building a comprehensive eCommerce application with **ASP.NET Core Microservices**
+- ✅ Orders Microservice with **MongoDB**, **service-to-service HTTP communication**
 - 🔲 Utilizing **Docker**, **Kubernetes**, **RabbitMQ**, **Redis**, **Azure DevOps**, and **Azure Kubernetes Service (AKS)**
 - 🔲 Practical skills in **containerization**, **orchestration**, **fault tolerance**, **caching**, **API management**, and **authentication**
 - 🔲 Creating and managing **Azure DevOps pipelines** for continuous integration and deployment (CI/CD)
@@ -21,26 +22,29 @@ A **comprehensive eCommerce application** built with **ASP.NET Core 10** using a
 ## 📐 Architecture Overview
 
 ```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                          eCommerce Platform                              │
-│                                                                          │
-│  ┌────────────────────┐  ┌────────────────────┐  ┌──────────────────┐   │
-│  │  Products Service  │  │   Users Service    │  │  Orders Service  │   │
-│  │ (ASP.NET Core 10)  │  │ (ASP.NET Core 10)  │  │(ASP.NET Core 10) │   │
-│  │  Port: 8080        │  │  Port: 18090       │  │  Port: (TBD)     │   │
-│  │  DB: MySQL         │  │  DB: PostgreSQL    │  │  DB: MongoDB     │   │
-│  └────────────────────┘  └────────────────────┘  └──────────────────┘   │
-│                                                                          │
-│  ┌────────────────────┐  ┌────────────────────┐                         │
-│  │ Angular (Products) │  │  Angular (Users)   │                         │
-│  │  front-end client  │  │  front-end client  │                         │
-│  └────────────────────┘  └────────────────────┘                         │
-│                                                                          │
-│                    🐳 Docker / Docker Compose                            │
-│                    ☸  Kubernetes / AKS (Planned)                        │
-│                    🐰 RabbitMQ Messaging (Planned)                       │
-│                    ⚡ Redis Caching (Planned)                            │
-└──────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            eCommerce Platform                                 │
+│                                                                               │
+│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────────────┐    │
+│  │ Products Service │  │  Users Service   │  │     Orders Service       │    │
+│  │ ASP.NET Core 10  │  │ ASP.NET Core 10  │  │    ASP.NET Core 10       │    │
+│  │  Port: 7000      │  │  Port: 5000      │  │    Port: 7000 (compose)  │    │
+│  │  DB: MySQL 8.0   │  │  DB: PostgreSQL  │  │    DB: MongoDB           │    │
+│  └──────────────────┘  └──────────────────┘  └──────────────────────────┘    │
+│           ▲                     ▲                   ▲          ▲              │
+│           │  HTTP Client        │  HTTP Client      │          │              │
+│           └─────────────────────┴───────────────────┘          │              │
+│                                                                │              │
+│  ┌──────────────────┐  ┌──────────────────┐                   │              │
+│  │ Angular Products │  │  Angular Users   │  ←── CORS: 4200   │              │
+│  │  front-end       │  │  front-end       │                   │              │
+│  └──────────────────┘  └──────────────────┘                   │              │
+│                                                                               │
+│               🐳 Docker / Docker Compose (per service)                        │
+│               ☸  Kubernetes / AKS (Planned)                                  │
+│               🐰 RabbitMQ Messaging (Planned)                                 │
+│               ⚡ Redis Caching (Planned)                                      │
+└───────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -49,75 +53,77 @@ A **comprehensive eCommerce application** built with **ASP.NET Core 10** using a
 
 ```
 Microservices/
-├── .gitignore                                  # Git ignore rules
-├── compose.yaml                                # Docker Compose orchestration
+├── .gitignore                                    # Git ignore rules
+├── compose.yaml                                  # Docker Compose (Products + Users)
 ├── mysql-init/
-│   └── db.sql                                  # MySQL schema initialization
+│   └── db.sql                                    # MySQL schema initialization
 ├── postgres-init/
-│   ├── sql1.sql                                # PostgreSQL schema (part 1)
-│   └── sql2.sql                                # PostgreSQL schema (part 2)
-├── mongo-init/
-│   └── init.js                                 # MongoDB initialization script
-├── ordersdb/                                   # ⚠️ MongoDB local data (git-ignored)
+│   ├── sql1.sql                                  # PostgreSQL schema (part 1)
+│   └── sql2.sql                                  # PostgreSQL schema (part 2)
+├── mongodb-init/
+│   └── init.js                                   # MongoDB initialization script
+├── ordersdb/                                     # ⚠️ MongoDB local data (git-ignored)
 │
-├── eCommerceSolution.ProductService/           # 📦 Products Microservice
-│   ├── DataAccessLayer/                        # EF Core + MySQL data access
-│   │   ├── Context/                            # DbContext
-│   │   ├── Entities/                           # Domain entities
-│   │   ├── Repositories/                       # Repository implementations
-│   │   └── RepositoryContracts/                # Repository interfaces
-│   ├── BusinessLogicLayer/                     # Business logic + AutoMapper + FluentValidation
-│   │   ├── DTO/                                # Data Transfer Objects
-│   │   ├── Mappers/                            # AutoMapper profiles
-│   │   ├── ServiceContract/                    # Service interfaces
-│   │   ├── Services/                           # Service implementations
-│   │   └── Validators/                         # FluentValidation validators
-│   └── ProductMicroService.API/                # ASP.NET Core Web API
-│       ├── ProductAPIEndPoints/                # Minimal API endpoints
-│       ├── Middlewares/                        # Exception handling middleware
-│       ├── Dockerfile                          # Container definition
-│       └── Program.cs                         # App entry point
+├── eCommerceSolution.ProductService/             # 📦 Products Microservice
+│   ├── DataAccessLayer/                          # EF Core + MySQL data access
+│   │   ├── Context/                              # DbContext
+│   │   ├── Entities/                             # Domain entities
+│   │   ├── Repositories/                         # Repository implementations
+│   │   └── RepositoryContracts/                  # Repository interfaces
+│   ├── BusinessLogicLayer/                       # Business logic + AutoMapper + FluentValidation
+│   │   ├── DTO/                                  # Data Transfer Objects
+│   │   ├── Mappers/                              # AutoMapper profiles
+│   │   ├── ServiceContract/                      # Service interfaces
+│   │   ├── Services/                             # Service implementations
+│   │   └── Validators/                           # FluentValidation validators
+│   └── ProductMicroService.API/                  # ASP.NET Core Web API
+│       ├── ProductAPIEndPoints/                  # Minimal API endpoints
+│       ├── Middlewares/                          # Exception handling middleware
+│       ├── Dockerfile                            # Container definition
+│       └── Program.cs                           # App entry point
 │
-├── eCommerceSolution.UsersService/             # 👤 Users & Auth Microservice
-│   ├── eCommerce.Core/                         # Domain layer
-│   │   ├── DTO/                                # Auth DTOs (Login, Register, Refresh)
-│   │   ├── Entities/                           # ApplicationUser, RefreshToken
-│   │   ├── Mappers/                            # AutoMapper profiles
-│   │   ├── RespositoryContract/                # Repository interfaces
-│   │   ├── ServicesContract/                   # Service + JWT interfaces
-│   │   ├── Services/                           # UserService implementation
-│   │   └── Validators/                         # Login/Register validators
-│   ├── eCommerce.Infrastructure/               # Infrastructure layer
-│   │   ├── DbContext/                          # Dapper DbContext
-│   │   └── Repositories/                       # User + RefreshToken repositories
-│   └── eCommerce.API/                          # ASP.NET Core Web API
-│       ├── Controllers/                        # AuthController
-│       ├── Services/                           # JwtTokenGenerator
-│       ├── Middlewares/                        # Exception handling middleware
-│       ├── Dockerfile                          # Container definition
-│       └── Program.cs                         # App entry point
+├── eCommerceSolution.UsersService/               # 👤 Users & Auth Microservice
+│   ├── eCommerce.Core/                           # Domain layer
+│   │   ├── DTO/                                  # Auth DTOs (Login, Register, Refresh)
+│   │   ├── Entities/                             # ApplicationUser, RefreshToken
+│   │   ├── Mappers/                              # AutoMapper profiles
+│   │   ├── RespositoryContract/                  # Repository interfaces
+│   │   ├── ServicesContract/                     # Service + JWT interfaces
+│   │   ├── Services/                             # UserService implementation
+│   │   └── Validators/                           # Login/Register validators
+│   ├── eCommerce.Infrastructure/                 # Infrastructure layer
+│   │   ├── DbContext/                            # Dapper DbContext
+│   │   └── Repositories/                         # User + RefreshToken repositories
+│   └── eCommerce.API/                            # ASP.NET Core Web API
+│       ├── Controllers/                          # AuthController
+│       ├── Services/                             # JwtTokenGenerator
+│       ├── Middlewares/                          # Exception handling middleware
+│       ├── Dockerfile                            # Container definition
+│       └── Program.cs                           # App entry point
 │
-├── eCommerceSolution.OrdersService/            # 🛒 Orders Microservice (In Progress)
-│   ├── DataAccessLayer/                        # EF Core / MongoDB data access
-│   │   ├── Entities/                           # Order, OrderItem entities
-│   │   ├── Repositories/                       # OrdersRepository implementation
-│   │   └── RepositoryContracts/                # IOrdersRepository interface
-│   ├── BusinessLogicLayer/                     # Business logic layer
-│   │   ├── DTO/                                # Order DTOs (Add/Update/Response)
-│   │   ├── HttpClients/                        # UsersMicroserviceClient (HTTP)
-│   │   ├── Mappers/                            # AutoMapper profiles
-│   │   ├── ServiceContracts/                   # IOrdersService interface
-│   │   ├── Services/                           # OrdersService implementation
-│   │   └── Validators/                         # FluentValidation validators
-│   └── OrderMicroservice.API/                  # ASP.NET Core Web API
-│       ├── ApiControllers/                     # OrdersController
-│       ├── Middlewares/                        # Exception handling middleware
-│       ├── Dockerfile                          # Container definition
-│       └── Program.cs                         # App entry point
+├── eCommerceSolution.OrdersService/              # 🛒 Orders Microservice ✅
+│   ├── docker-compose.yml                        # Orders-specific Docker Compose
+│   ├── docker-compose.override.yml               # Local overrides
+│   ├── DataAccessLayer/                          # MongoDB data access
+│   │   ├── Entities/                             # Order, OrderItem entities
+│   │   ├── Repositories/                         # OrdersRepository (MongoDB)
+│   │   └── RepositoryContracts/                  # IOrdersRepository interface
+│   ├── BusinessLogicLayer/                       # Business logic layer
+│   │   ├── DTO/                                  # Order DTOs (Add/Update/Response)
+│   │   ├── HttpClients/                          # UsersMicroserviceClient, ProductsMicroserviceClient
+│   │   ├── Mappers/                              # AutoMapper profiles
+│   │   ├── ServiceContracts/                     # IOrdersService interface
+│   │   ├── Services/                             # OrdersService implementation
+│   │   └── Validators/                           # FluentValidation validators
+│   └── OrderMicroservice.API/                    # ASP.NET Core Web API
+│       ├── ApiControllers/                       # OrdersController
+│       ├── Middlewares/                          # Exception handling middleware
+│       ├── Dockerfile                            # Container definition
+│       └── Program.cs                           # App entry point
 │
 └── front-end/
-    ├── Product-Service/                        # Angular app for Products
-    └── User-Service/                           # Angular app for Users
+    ├── Product-Service/                          # Angular app for Products
+    └── User-Service/                             # Angular app for Users
 ```
 
 ---
@@ -130,17 +136,19 @@ Microservices/
 | **ASP.NET Core 10** | Microservice Web APIs |
 | **Entity Framework Core** | ORM for Products (MySQL) |
 | **Dapper** | Lightweight ORM for Users (PostgreSQL) |
+| **MongoDB.Driver 3.13** | MongoDB driver for Orders |
 | **AutoMapper** | Object-to-object mapping |
 | **FluentValidation** | Input validation |
 | **JWT Bearer Auth** | Authentication & token management |
+| **HttpClient** | Service-to-service HTTP communication |
 | **Swashbuckle / Swagger** | API documentation |
 
 ### Databases
-| Database | Service |
-|---|---|
-| **MySQL 8+** | Products Microservice |
-| **PostgreSQL 15+** | Users Microservice |
-| **MongoDB** | Orders Microservice |
+| Database | Version | Service |
+|---|---|---|
+| **MySQL** | 8.0 | Products Microservice |
+| **PostgreSQL** | 13 | Users Microservice |
+| **MongoDB** | latest | Orders Microservice |
 
 ### Frontend
 | Technology | Purpose |
@@ -168,14 +176,14 @@ Microservices/
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running
 - Docker Compose (included with Docker Desktop)
 
-### Quick Start
+### Option 1 — Products + Users Services (root compose)
 
 ```bash
 # Clone the repository
 git clone <your-repo-url>
 cd Microservices
 
-# Pull and start all services
+# Pull and start Products + Users services
 docker compose up -d
 
 # View running containers
@@ -183,10 +191,26 @@ docker compose ps
 
 # View logs
 docker compose logs -f
+
+# Stop services
+docker compose down
+```
+
+### Option 2 — Orders Service (with all dependencies)
+
+```bash
+cd eCommerceSolution.OrdersService
+
+# Start Orders + MongoDB + Products + Users
+docker compose up -d
+
+# Stop
+docker compose down
 ```
 
 ### Services & Ports
 
+#### Root `compose.yaml` (Products + Users)
 | Service | Container Name | Port (Host → Container) |
 |---|---|---|
 | Products API | `products-microservice` | `8080:8080` |
@@ -194,11 +218,15 @@ docker compose logs -f
 | MySQL | `mysql-container` | `3307:3306` |
 | PostgreSQL | `postgres-container` | `5432:5432` |
 
-### Stop Services
-
-```bash
-docker compose down
-```
+#### Orders `docker-compose.yml`
+| Service | Container Name | Port (Host → Container) |
+|---|---|---|
+| Orders API | `ordermicroservice.api` | `7000:8080` |
+| MongoDB | `mongodb-container` | `27017:27017` |
+| Products API (dep.) | `products-microservice` | `6000:8080` |
+| MySQL (dep.) | `mysql-container` | `3307:3306` |
+| Users API (dep.) | `users-microservice` | `5000:9090` |
+| PostgreSQL (dep.) | `postgres-container` | `5433:5432` |
 
 ---
 
@@ -210,6 +238,7 @@ docker compose down
 |---|---|---|
 | `GET` | `/api/products` | Get all products |
 | `GET` | `/api/products/{id}` | Get product by ID |
+| `GET` | `/api/products/search/product-id/{productID}` | Search product by ID |
 | `POST` | `/api/products` | Create a new product |
 | `PUT` | `/api/products/{id}` | Update a product |
 | `DELETE` | `/api/products/{id}` | Delete a product |
@@ -221,21 +250,44 @@ docker compose down
 | `POST` | `/api/auth/register` | Register a new user |
 | `POST` | `/api/auth/login` | Login and get JWT tokens |
 | `POST` | `/api/auth/refresh-token` | Refresh JWT access token |
+| `GET` | `/api/users/{userID}` | Get user by ID |
 
-### Orders Service — `http://localhost:(TBD)`
+### Orders Service — `http://localhost:7000`
 
 | Method | Endpoint | Description |
 |---|---|---|
 | `GET` | `/api/orders` | Get all orders |
-| `GET` | `/api/orders/{id}` | Get order by ID |
+| `GET` | `/api/orders/search/orderid/{orderID}` | Get order by Order ID |
+| `GET` | `/api/orders/search/userid/{userID}` | Get orders by User ID |
+| `GET` | `/api/orders/search/productid/{productID}` | Get orders by Product ID |
+| `GET` | `/search/orderDate/{orderDate}` | Get orders by date |
 | `POST` | `/api/orders` | Create a new order |
-| `PUT` | `/api/orders/{id}` | Update an order |
-| `DELETE` | `/api/orders/{id}` | Delete an order |
+| `PUT` | `/api/orders/{orderID}` | Update an order |
+| `DELETE` | `/api/orders/{orderID}` | Delete an order |
 
 > 📖 Swagger UI available at:
 > - Products: `http://localhost:8080/swagger`
 > - Users: `http://localhost:18090/swagger`
-> - Orders: `http://localhost:(TBD)/swagger`
+> - Orders: `http://localhost:7000/swagger`
+
+---
+
+## 🔗 Service-to-Service Communication
+
+The **Orders Service** communicates with other microservices via **HTTP clients**:
+
+| Client | Target | Endpoint Called |
+|---|---|---|
+| `UsersMicroserviceClient` | Users Service | `GET /api/users/{userID}` |
+| `ProductsMicroserviceClient` | Products Service | `GET /api/products/search/product-id/{productID}` |
+
+Configured via environment variables:
+```
+UsersMicroserviceName   = <hostname>
+UsersMicroservicePort   = <port>
+ProductsMicroserviceName = <hostname>
+ProductsMicroservicePort = <port>
+```
 
 ---
 
@@ -276,22 +328,30 @@ POST /api/auth/login
 #### Products Service
 | Variable | Default | Description |
 |---|---|---|
-| `MYSQL_HOST` | `localhost` | MySQL hostname |
-| `MYSQL_PASSWORD` | `Temp123456` | MySQL password |
+| `MYSQL_HOST` | `mysql-container` | MySQL hostname |
+| `MYSQL_PORT` | `3306` | MySQL port |
+| `MYSQL_DATABASE` | `ecommerceproductsdatabase` | Database name |
+| `MYSQL_PASSWORD` | `admin` | MySQL password |
 
 #### Users Service
 | Variable | Default | Description |
 |---|---|---|
-| `POSTGRES_HOST` | `localhost` | PostgreSQL hostname |
+| `POSTGRES_HOST` | `postgres-container` | PostgreSQL hostname |
+| `POSTGRES_PORT` | `5432` | PostgreSQL port |
+| `POSTGRES_DATABASE` | `eCommerceUsers` | Database name |
 | `POSTGRES_PASSWORD` | `admin` | PostgreSQL password |
 | `Jwt__Key` | *(required)* | JWT signing secret key |
 
-### Local Development (appsettings.json)
-
-**Products Service** connection string:
-```
-Server=$MYSQL_HOST;Port=3306;Database=ecommerceproductsdatabase;User ID=product_api;Password=$MYSQL_PASSWORD;
-```
+#### Orders Service
+| Variable | Default | Description |
+|---|---|---|
+| `MONGODB_HOST` | `mongodb-container` | MongoDB hostname |
+| `MONGODB_PORT` | `27017` | MongoDB port |
+| `MONGODB_DATABASE` | `OrdersDatabase` | MongoDB database name |
+| `UsersMicroserviceName` | — | Users service hostname |
+| `UsersMicroservicePort` | — | Users service port |
+| `ProductsMicroserviceName` | — | Products service hostname |
+| `ProductsMicroservicePort` | — | Products service port |
 
 ---
 
@@ -309,6 +369,13 @@ docker build -t ms2002/ecommerce-products-microservice:v1.0 .
 ```bash
 cd eCommerceSolution.UsersService
 docker build -t ms2002/ecommerce-users-microservice:v1.0 .
+```
+
+### Orders Microservice
+
+```bash
+cd eCommerceSolution.OrdersService
+docker build -f OrderMicroservice.API/Dockerfile -t ms2002/ecommerce-orders-microservice:v1.0 .
 ```
 
 ---
@@ -335,12 +402,13 @@ docker build -t ms2002/ecommerce-users-microservice:v1.0 .
 | `Swashbuckle.AspNetCore` | Swagger UI |
 
 ### Orders Service
-| Package | Purpose |
-|---|---|
-| `MongoDB.Driver` | MongoDB driver |
-| `AutoMapper` | Object mapping |
-| `FluentValidation` | Input validation |
-| `Swashbuckle.AspNetCore` | Swagger UI |
+| Package | Version | Purpose |
+|---|---|---|
+| `MongoDB.Driver` | 3.13.0 | MongoDB driver |
+| `AutoMapper` | 16.3.0 | Object mapping |
+| `FluentValidation` | 12.2.0 | Input validation |
+| `FluentValidation.DependencyInjectionExtensions` | 12.2.0 | DI integration |
+| `Swashbuckle.AspNetCore` | 10.3.1 | Swagger UI |
 
 ---
 
@@ -354,7 +422,8 @@ docker build -t ms2002/ecommerce-users-microservice:v1.0 .
 - [x] Docker Compose local orchestration
 - [x] Angular front-end clients
 - [x] FluentValidation & AutoMapper integration
-- [🔄] Orders Microservice (ASP.NET Core + MongoDB) — *In Progress*
+- [x] Orders Microservice (ASP.NET Core + MongoDB)
+- [x] Service-to-service HTTP communication (Orders → Users, Orders → Products)
 
 ### Phase 2 — Messaging & Caching 🔲
 - [ ] RabbitMQ integration for async event-driven communication
